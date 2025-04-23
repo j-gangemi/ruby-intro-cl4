@@ -31,3 +31,14 @@ bitcoin = bitcoin.to_f
 
 # 3. inspect the bitcoin_data hash
 # puts bitcoin_data
+#  extract current bitcoin rate
+# puts bitcoin_data["USD"]["last"]
+bitcoin_rate = bitcoin_data["USD"]["last"]
+
+# calculate value of user's bitcoin
+bitcoin_value = bitcoin_rate * bitcoin
+
+# bitcoinmult = 41405.1046
+# value = bitcoin * bitcoinmult
+ puts "1 Bitcoin is value at $#{bitcoin_rate} USD."
+ puts "Your bitcoin is worth $#{bitcoin_value}."
