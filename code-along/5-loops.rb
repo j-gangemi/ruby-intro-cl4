@@ -20,3 +20,8 @@ loop do
     puts tacos[index]
     index = index + 1
 end
+
+for taco in tacos
+    # taco = tacos[index]
+    puts taco
+end
